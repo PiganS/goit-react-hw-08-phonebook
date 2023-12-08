@@ -1,4 +1,4 @@
-import { HOME_ROUTE, LOGIN_ROUTE } from 'constants/routes';
+import { LOGIN_ROUTE } from 'constants/routes';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';

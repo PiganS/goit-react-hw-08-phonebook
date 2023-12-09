@@ -4,10 +4,11 @@ import { Route, Routes } from 'react-router-dom';
 import { Suspense, lazy, useEffect } from 'react';
 import { Layout } from './Layout/Layout';
 import { useDispatch } from 'react-redux';
-import { refreshThunk } from 'redux/auth/auth.reducer';
+
 import * as ROUTES from '../constants/routes';
 import RestrictedRoute from './RestrictedRoute';
 import PrivateRoute from './PrivateRoute';
+import { refreshThunk } from 'redux/auth/operations';
 
 const Home = lazy(() => import('pages/Home'));
 const Login = lazy(() => import('pages/Login'));

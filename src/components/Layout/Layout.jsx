@@ -8,7 +8,7 @@ import {
 } from './Layout.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectAuthenticated } from 'redux/auth/auth.selectors';
-import { logOutThunk } from 'redux/auth/auth.reducer';
+import { logOutThunk } from 'redux/auth/operations';
 
 export const Layout = () => {
   const dispatch = useDispatch();

@@ -30,7 +30,7 @@ export const Link = styled(NavLink)`
 
   &.active {
     color: white;
-    background-color: orangered;
+    background-color: #854848;
   }
 `;
 
@@ -51,7 +51,7 @@ export const ButtonOut = styled.button`
 
   &:hover {
     color: white;
-    background-color: orangered;
+    background-color: #854848;
   }
 `;
 
@@ -67,4 +67,15 @@ export const StyledTrendingTitle = styled.h2`
   box-shadow: 14px 14px 30px 0px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: 14px 14px 30px 0px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 14px 14px 30px 0px rgba(0, 0, 0, 0.51);
+`;
+
+export const StyledTitle = styled.h2`
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.945);
 `;

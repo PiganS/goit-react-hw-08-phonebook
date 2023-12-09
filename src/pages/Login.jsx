@@ -1,7 +1,9 @@
 import { Button, Form, Input } from 'components/ContactForm/ContactForm.styled';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { loginThunk } from 'redux/auth/auth.reducer';
+import { toast } from 'react-toastify';
+
+import { loginThunk } from 'redux/auth/operations';
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -16,7 +18,12 @@ const Login = () => {
       password,
     };
 
-    dispatch(loginThunk(formData));
+    dispatch(loginThunk(formData))
+      .unwrap()
+      .then(() => toast.info('Welcome'))
+      .catch(err => {
+        toast.error('error, try changing the data!');
+      });
   };
 
   return (

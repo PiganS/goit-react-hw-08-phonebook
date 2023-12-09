@@ -18,6 +18,8 @@ body {
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #434343, #000000);
+  background-image: url(https://images.pexels.com/photos/1000445/pexels-photo-1000445.jpeg);
+  background-size: 100%;
 }
 
 code {

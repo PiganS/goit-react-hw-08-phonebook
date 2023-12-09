@@ -1,8 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-
-import { instance } from 'redux/auth/auth.reducer';
-
-// const URL = 'https://65690616de53105b0dd6a6a4.mockapi.io/contacts';
+import { instance } from 'redux/auth/operations';
 
 export const fetchContacts = createAsyncThunk(
   'contacts/fetchAll',

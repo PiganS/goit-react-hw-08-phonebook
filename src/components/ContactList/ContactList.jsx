@@ -35,7 +35,7 @@ export const ContactList = () => {
           <ContactText>
             {contact.name}
             <br />
-            {contact.phone}
+            {contact.number}
           </ContactText>
           <ButtonDel
             onClick={() => handleDeleteProduct(contact.id)}
